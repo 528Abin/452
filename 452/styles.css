@@ -1,0 +1,178 @@
+/* Home Page Styles */
+.home-page {
+    padding: 20px;
+    background: #ffffff;
+    color: #333333;
+}
+
+/* Navigation Bar */
+.navbar {
+    background: #000000;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    background: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Customer Support Page */
+.support-page {
+    padding: 20px;
+}
+
+/* Support Flowchart Container */
+.flowchart-container {
+    margin: 20px 0;
+    border: 1px solid #cccccc;
+    padding: 10px;
+}
+
+/* Contact Information */
+.contact-info {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin-bottom: 10px;
+}
+
+/* Product Portfolio Page */
+/* Basic styling for the portfolio page container */
+/* Basic styling for the portfolio page container */
+.portfolio-page {
+    display: flex;
+    /* Use flexbox to arrange items */
+    flex-wrap: wrap;
+    /* Allow items to wrap to new lines if necessary */
+    justify-content: space-between;
+    /* Distribute items evenly with space between them */
+    padding: 10px;
+    /* Add some padding */
+}
+
+/* Styling for each product card */
+.product-card {
+    flex: 0 0 calc(9.1% - 10px);
+    /* Set the base width for each card, minus the space between them */
+    margin-bottom: 20px;
+    /* Add some space between rows of cards */
+    background-color: #fff;
+    /* White background */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 5px;
+    /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Add a shadow for depth */
+    overflow: hidden;
+    /* Prevent content from spilling out */
+    position: relative;
+    /* So we can position the image within */
+}
+
+.product-card img {
+    width: 100%;
+    /* Image takes full width of the card */
+    height: auto;
+    /* Maintain aspect ratio */
+    display: block;
+    /* Remove bottom whitespace */
+}
+
+/* Optional: Add some space between the cards */
+.product-card:not(:last-child) {
+    margin-right: 10px;
+    /* Space between cards */
+}
+
+/* Individual Product Card */
+.product-card {
+    border: 1px solid #cccccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 200px;
+}
+
+/* About Us Page */
+.about-us {
+    padding: 20px;
+}
+
+/* Blog or News Page */
+.blog-page {
+    padding: 20px;
+}
+
+/* Blog Post or News Article */
+.post {
+    margin-bottom: 40px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+
+    .navbar,
+    .footer {
+        text-align: left;
+    }
+
+    .portfolio-page {
+        justify-content: center;
+    }
+
+    .product-card {
+        width: auto;
+    }
+}
+
+/* Comment explaining the use of a variable for main color */
+:root {
+    --main-color: #007bff;
+}
+
+/* Using the variable for link color */
+a {
+    color: var(--main-color);
+}
+
+/* Comment on adding a transition for a smooth effect on hover */
+a:hover {
+    transition: color 0.3s ease-in-out;
+    color: #0056b3;
+}
+
+/* Comment on adding a max-width for images to ensure they don't overflow their containers */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Comment on setting a base font size for the body and allowing it to be scalable with rem units */
+body {
+    font-size: 16px;
+}
+
+/* Comment on using box-sizing for border and padding to be included in the element's total width and height */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/* Comment on adding a simple hover effect for buttons */
+.button:hover {
+    background-color: #0056b3;
+    cursor: pointer;
+}
